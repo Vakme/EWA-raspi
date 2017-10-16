@@ -1,0 +1,48 @@
+.tiles {
+  margin: 5%;
+  width: 20%;
+  &__element {
+    height: 500px;
+    margin-left: 50px;
+    align-items: flex-start;
+    padding: 20px;
+    overflow: hidden;
+  }
+  &__container {
+    width: 100%;
+
+  }
+  &__content {
+    width: 100%;
+    height: 90%;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.main-sidebar {
+  &__header {
+    font-size: 2rem;
+  }
+  &__userinfo {
+    margin-bottom: 30px;
+  }
+  &__data {
+    height: 90%;
+    overflow: hidden;
+  }
+  &__notif {
+
+    animation: notificationMove 10s linear 0s normal infinite none running;
+    &__elem {
+      padding-bottom: 15px;
+      border-bottom: 1px #45b47f solid;
+    }
+  }
+}
+
+
+@keyframes notificationMove {
+  from { transform: translateY(320px); }
+  to { transform: translateY(-520px);}
+}
